@@ -15,12 +15,17 @@ export default function Counter() {
     setNum(num + val);
   }
 
+  function reset() {
+    setNum(0);
+  }
+
   return (
     <div className={styles.counter}>
       <div className={styles.row}>
         <button onClick={() => handleClick(-1)}>-</button>
         <div className={styles.display}>{num}</div>
         <button onClick={() => handleClick(1)}>+</button>
+        <button onClick={() => reset()}>Reset</button>
       </div>
       <p>This is a better example of a React functional component.</p>
       <p>It makes use of the 'useState' hook to track the state of the 'num' variable and show it on the page, which is the counter you are seeing.</p>
