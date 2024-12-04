@@ -12,7 +12,7 @@ export default function Invert() {
   }, [state]);
 
   function invertState(){
-    setState(true);
+    setState(!state);
   }
 
   return (
