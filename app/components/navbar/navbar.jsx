@@ -25,6 +25,11 @@ export default function Navbar() {
             <p>Hooks</p>
           </Link>
         </li>
+        <li>
+          <Link href="/page4" className={styles.navbarbtn}>
+            <p>Page 4</p>
+          </Link>
+        </li>
       </ul>
     </div>
   );
